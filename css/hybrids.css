@@ -24,7 +24,7 @@ table tr:first-of-type {
     height: 100px;
 }
 
-table:hover tr:first-of-type {
+/*table:hover tr:first-of-type {
     height: initial;
 }
 
@@ -34,7 +34,7 @@ table:hover tr:first-of-type:hover {
 
 table tr:hover {
     height: 100px;
-}
+}*/
 
 table tr:nth-of-type(1n+2) td {
     background-color: turquoise;
@@ -44,10 +44,10 @@ table tr:nth-of-type(1n+2) td.same-species {
     background-color: #DDD;
 }
 
-table tr:nth-of-type(1n+2) td:hover {
+/*table tr:nth-of-type(1n+2) td:hover {
     height: 100px;
     width: 40%;
-}
+}*/
 
 h1, h2, h3, h4 {
     font-weight: bold;
