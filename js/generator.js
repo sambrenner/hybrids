@@ -1,6 +1,7 @@
 const container = document.getElementById("container");
 
 createTable(equids, equidHybrids);
+createTable(animals, mythologicalHybrids);
 
 function createTable(species, hybrids) {
     const sortedSpecies = species.sort((a, b) => a.commonName < b.commonName);
