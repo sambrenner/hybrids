@@ -61,7 +61,13 @@ function createHybridCell(speciesA, speciesB, hybrids) {
         );
     });
 
-    cell.innerHTML = hybridMatches.map(match => `<h2>${match.commonName}</h2>`).join("");
+    cell.innerHTML = hybridMatches.map(match => `
+        <h2>
+            <a href="${match.reference || "#"}">
+                ${match.commonName}
+            </a>
+        </h2>
+    `).join("");
 
     return cell;
 }
