@@ -48,21 +48,19 @@ function createHeader(species) {
 function createHybridCell(speciesA, speciesB, hybrids) {
     const cell = document.createElement("td");
 
-    if (speciesA.id == speciesB.id || speciesA.id == speciesB.sameOffspringAs) {
+    if (speciesA.id == speciesB.id || speciesA.id == speciesB.sameSpeciesAs) {
         cell.classList.add("same-species");
         return cell;
     }
 
-    const hybrid = hybrids.find(hy => {
+    const hybridMatches = hybrids.filter(hy => {
         return (
             hy.parentAId === speciesA.id && hy.parentBId === speciesB.id ||
             hy.parentAId === speciesB.id && hy.parentBId === speciesA.id
         );
     });
 
-    if (hybrid) {
-        cell.innerHTML = `<h2>${hybrid.commonName}</h2>`;
-    }
+    cell.innerHTML = hybridMatches.map(match => `<h2>${match.commonName}</h2>`).join("");
 
     return cell;
 }

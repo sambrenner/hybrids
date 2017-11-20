@@ -30,37 +30,37 @@ const equids = [
         id: 0,
         latinName: "Equus ferus caballus &#9792;",
         commonName: "Horse (female)",
-        sameOffspringAs: 1
+        sameSpeciesAs: 1
     },
     {
         id: 1,
         latinName: "Equus ferus caballus &#9794;",
         commonName: "Horse (male)",
-        sameOffspringAs: 0
+        sameSpeciesAs: 0
     },
     {
         id: 2,
         latinName: "Equus africanus asinus &#9792;",
         commonName: "Donkey (female)",
-        sameOffspringAs: 3
+        sameSpeciesAs: 3
     },
     {
         id: 3,
         latinName: "Equus africanus asinus &#9794;",
         commonName: "Donkey (male)",
-        sameOffspringAs: 2
+        sameSpeciesAs: 2
     },
     {
         id: 4,
         latinName: "Equus zebra, Equus quagga, Equus grevyi &#9792;",
         commonName: "Zebra (female)",
-        sameOffspringAs: 5
+        sameSpeciesAs: 5
     },
     {
         id: 5,
         latinName: "Equus zebra, Equus quagga, Equus grevyi &#9794;",
         commonName: "Zebra (male)",
-        sameOffspringAs: 4
+        sameSpeciesAs: 4
     }
 ];
 
