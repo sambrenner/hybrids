@@ -1,0 +1,57 @@
+#container {
+    margin: 0 auto;
+    padding: 50px;
+    width: 1000px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table tr th,
+table tr td {
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+}
+
+table tr th {
+    background-color: pink;
+}
+
+table tr:first-of-type {
+    height: 100px;
+}
+
+table:hover tr:first-of-type {
+    height: initial;
+}
+
+table:hover tr:first-of-type:hover {
+    height: 100px;
+}
+
+table tr:hover {
+    height: 100px;
+}
+
+table tr:nth-of-type(1n+2) td {
+    background-color: turquoise;
+}
+
+table tr:nth-of-type(1n+2) td.same-species {
+    background-color: #DDD;
+}
+
+table tr:nth-of-type(1n+2) td:hover {
+    height: 100px;
+    width: 40%;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
